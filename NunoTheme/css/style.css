@@ -1,19 +1,19 @@
 /*============= RESETS =============*/
 
 /*-- iPhone X Remove Gutters --*/
-html{
+html {
     padding: env(safe-area-inset);
 }
+
 /*-- Prevent Horizontal Scrolling & Font Style --*/
 
-html,body{
+html, body {
     overflow-x: hidden;
-    font-family: "Cera Pro",sans-serif;
-    font-size: 1.2rem;
-    color: #505962 !important;
-;
+    font-family: "Lato", sans-serif;
+    color: #505962 !important;;
 }
-.text-nuno{
+
+.text-nuno {
     color: #1ebba3 !important;
 }
 
@@ -24,9 +24,54 @@ html,body{
 
 /*============= NAVIGATION =============*/
 
+.navbar-brand img {
+    height: 2rem;
+}
+
+.navbar {
+    padding: .7rem 50rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    font-size: .9rem;
+    transition: background-color .5s ease;
+}
+
+.navbar-nav li {
+    padding-right: .8rem;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #1ebba3;
+}
+
+.custom-toggler-icon {
+    color: white;
+    font-size: 1.6rem;
+}
+
+.navbar.solid {
+    background: rgba(0, 0, 0, 0.7) !important;
+    transition: background-color 1s ease;
+}
 
 /*-- Remove Button Outline --*/
 
+button:focus, a:focus {
+    outline: 0 !important;
+    -webkit-appearance: none;
+    box-shadow: none;
+}
+
+button, a, a.btn {
+    transition: all .6s ease;
+}
 
 /*============= LANDING PAGE =============*/
 
@@ -80,7 +125,6 @@ html,body{
 
 
 /* Devices under 576px (sm) */
-
 
 
 /*============ BOOTSTRAP BREAK POINTS:
