@@ -56,7 +56,11 @@ html, body {
     font-size: 1.6rem;
 }
 
-.navbar.solid {
+.navbar.solid{
+    background: rgba(0, 0, 0, 0.7) !important;
+    transition: background-color 1s ease;
+}
+.navbar.solid-toggle{
     background: rgba(0, 0, 0, 0.7) !important;
     transition: background-color 1s ease;
 }
@@ -76,6 +80,15 @@ button, a, a.btn {
 /*============= LANDING PAGE =============*/
 
 /*--- Fixed Landing Page Section --*/
+
+.home-inner{
+    background-image: url("../img/computers.jpg");
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
 
 /*-- Landing Page Caption --*/
 
