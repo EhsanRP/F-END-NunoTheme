@@ -56,47 +56,132 @@ html, body {
     font-size: 1.6rem;
 }
 
-.navbar.solid{
+.navbar.solid {
     background: rgba(0, 0, 0, 0.7) !important;
     transition: background-color 1s ease;
 }
-.navbar.solid-toggle{
+
+.navbar.solid-toggle {
     background: rgba(0, 0, 0, 0.7) !important;
     transition: background-color 1s ease;
 }
 
 /*-- Remove Button Outline --*/
 
-button:focus, a:focus {
+button:focus, a:focus a.btn:focus {
     outline: 0 !important;
     -webkit-appearance: none;
     box-shadow: none;
 }
 
-button, a, a.btn {
+button,
+a,
+a.btn,
+.svg-inline--fa {
     transition: all .6s ease;
 }
 
 /*============= LANDING PAGE =============*/
 
 /*--- Fixed Landing Page Section --*/
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+}
 
-.home-inner{
-    background-image: url("../img/computers.jpg");
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.home-inner {
+    background-image: url('../img/computers.jpg');
     position: fixed;
     height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+    display: table;
+}
+
+/*LANDING PAGE CAPTION*/
+.caption {
+    z-index: 1;
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.caption h1 {
+    font-size: 4.5rem;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+
+.caption h3 {
+    font-size: 2.5rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 2rem;
+}
+
+.caption .btn-lg {
+    font-size: 1.5rem;
+    border-width: medium;
+    padding: .8rem 1.5rem;
 }
 
 /*-- Landing Page Caption --*/
 
 /*-- Bouncing Down Arrow --*/
 
+.arrow {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+}
+
+.down-arrow .svg-inline--fa {
+    color: white;
+    font-size: 2.2rem;
+    opacity: .3;
+}
+
+.down-arrow .svg-inline--fa:hover {
+    opacity: .8;
+}
 
 /*============= FEATURES SECTION =============*/
 
+.btn-sm {
+    border-width: medium !important;
+    border-radius: 0 !important;
+    padding: .5rem 1.1rem !important;
+    text-transform: uppercase;
+    font-size: .9rem !important;
+    margin: 1rem;
+}
+.btn-nuno{
+    background-color: #1ebba3 !important;
+    color: white !important;
+}
+
+.btn-nuno:hover  {
+    background-color: #189582 !important;
+}
 
 /*===== FIXED BACKGROUND IMG DARK =====*/
 

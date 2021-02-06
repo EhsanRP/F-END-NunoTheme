@@ -16,13 +16,13 @@ function checkScroll() { //check if page is scrolled
 /*========== ADD SOLID CLASS TO NAVBAR WHEN TOGGLED ==========*/
 $('.navbar-toggler').click(function () { //when navbar-toggler is clicked
     if ($(window).scrollTop() <= 300) { //if window scrolled 300px or less from top
-        $('nav.navbar').toggleClass("solid-toggle"); //add the solid class to navbar
+        $("nav.navbar").toggleClass("solid-toggle"); //add the solid class to navbar
     }
 });
 
-/*========== CLOSE MOBILE MENU ON CLICK & SMOOTH SCROLL TO LINK ==========*/
 
-(document).on('click', 'a[href^="#"]', function (event) {
+/*========== CLOSE MOBILE MENU ON CLICK & SMOOTH SCROLL TO LINK a[href^="#"] ==========*/
+$(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
     $('.navbar-toggler').addClass('collapsed');
     $('#navbarResponsive').removeClass('show');
@@ -38,6 +38,11 @@ $('.navbar-toggler').click(function () { //when navbar-toggler is clicked
 
 /*========== BOUNCING DOWN ARROW ==========*/
 
+$(document).ready(function () {
+    $(window).scroll(function () {
+        $('.arrow').css('opacity', 1 - $(window).scrollTop() / 250);
+    });
+});
 
 /*========== LIGHTBOX IMAGE GALLERY ==========*/
 

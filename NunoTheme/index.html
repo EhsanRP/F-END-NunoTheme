@@ -11,6 +11,7 @@
     <!-- Plugins.css -->
     <!-- Google Fonts https://fonts.google.com/ -->
     <!-- Animate.css https://cdnjs.com/libraries/animate.css/
+
         https://daneden.github.io/animate.css/ -->
     <!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
     <!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
@@ -18,17 +19,17 @@
     <!-- Bootstrap JS https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
     <!-- jQuery https://code.jquery.com/ NOTE: jQuery 3.5.0 is not Compatible with Bootstrap yet, please use 3.4.1 as seen below -->
 
+    <link rel="stylesheet" href="./Extra/animate.css">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-    <script src="./Extra/FontAwesome/fontAwesome.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/plugins.css">
 
     <link rel="stylesheet" href="./Extra/bootstrap/css/bootstrap.min.css">
     <script src="./Extra/JQuery/JQuery.js"></script>
     <script src="./Extra/bootstrap/js/bootstrap.min.js"></script>
     <script src="./Extra/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 
 </head>
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -37,50 +38,96 @@
 <div id="home">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top ">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a href="#home" class="navbar-brand"><img src="img/nuno.png" alt="Nuno Brand"></a>
+            <a href="#home" class="navbar-brand"><img src="img/nuno.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="custom-toggler-icon">
-                    <i class="fas fa-bars"></i>
-                </span>
+                <span class="custom-toggler-icon"><i class="fas fa-bars"></i></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#features" class="nav-link">Features</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
-                    <li class="nav-item"><a href="#team" class="nav-link">Tram</a></li>
-                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                    <li class="nav-item"><a href="#clients" class="nav-link">Clients</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#clients" class="nav-link">Clients</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
                 </ul>
             </div>
 
         </div>
     </nav>
-    <!-- End of Navigation -->
+    <!-- End Navigation -->
 
-    <!-- Start of Landing Page Image -->
-
+    <!-- Start Landing Page Image -->
     <div class="landing">
-        <div class="hole-wrap">
-            <div class="home-inner">
+        <div class="home-wrap">
+            <div class="home-inner"></div>
+        </div>
+    </div>
+    <!-- End Landing Page Image -->
 
-            </div>
+    <!-- Start Landing Page Caption -->
+    <div class="caption text-center text-light text-uppercase">
+
+        <h1 class="font-weight-bold os-animation" data-animation="bounceInUp" data-delay=".6s">Welcome to <span
+                class="text-nuno">Nuno</span></h1>
+        <h3 class="os-animation" data-animation="bounceInUp" data-delay=".8s">Animated Bootstrap Theme</h3>
+        <a href="#features" class="btn btn-outline-light btn-lg rounded-0 os-animation" data-animation="bounceInUp"
+           data-delay="1s">Get Started</a>
+
+    </div>
+    <!-- End Landing Page Caption -->
+
+    <!-- Start Bouncing Down Arrow -->
+    <a href="#features" class="down-arrow text-center">
+        <div class="arrow d-none d-md-block">
+            <i class="fas fa-angle-down"></i>
+        </div>
+    </a>
+    <!-- End Bouncing Down Arrow -->
+
+    <!--    Start Theme Heading-->
+
+    <div class="row text-center py-4 os-animation justify-content-center" data-animation="fadeInUp">
+        <div class=" col-11 col-md-10 col-lg-9">
+            <h1>NUNO Bootstrap Responsive Theme</h1>
+            <p class="lead">Bootstrap is an open-source front-end library with HTML and CSS based designs. This website
+                is built with HTML5, CSS3 and Bootstrap 4.</p>
+            <a href="#contact" class="btn btn-secondary btn-sm">Request A Quote</a>
+            <a href="" class="btn btn-nuno btn-sm">See Our Portfolio</a>
         </div>
     </div>
 
-    <!--  End of Landing Page Image   ->
+    <!--    End Theme Heading-->
 
 </div>
 <!-- End Home Section -->
 
 <!-- Start Features Section -->
 <div id="features">
-
+    <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at dignissimos distinctio ea eius explicabo, harum
+        incidunt ipsum nam, odio perferendis quibusdam quod reiciendis sequi similique ullam velit veritatis
+        voluptates.</h1>
 </div>
 <!-- End of Features Section -->
 
@@ -134,16 +181,24 @@
 
 <!-- Script Source Files -->
 
+<!-- Plugins.js -->
+
 <script src="js/plugins.js"></script>
+<script src="js/fa.js"></script>
 <!-- Waypoints https://cdnjs.com/libraries/waypoints
     https://github.com/imakewebthings/waypoints -->
-<!-- Font Awesome https://fontawesome.com/  https://use.fontawesome.com/releases/v5.11.2/js/all.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 <!-- Lightbox Image Gallery https://cdnjs.com/libraries/lightbox2  https://lokeshdhakar.com/projects/lightbox2/ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
 <!-- Owl Carousel https://cdnjs.com/libraries/OwlCarousel2
     http://owlcarousel2.github.io/OwlCarousel2/ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <!-- jQuery CounterUp https://www.jsdelivr.com/package/npm/jquery.counterup
     https://github.com/bfintal/Counter-Up2 -->
+<script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
 <!-- Bootstrap Form Validator https://cdnjs.com/libraries/1000hz-bootstrap-validator -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 
 <!-- End of Script Source Files -->
 
